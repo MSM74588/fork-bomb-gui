@@ -6,6 +6,6 @@ pip install pyinstaller
 ```
 
 ```
-pyinstaller --onefile --noconsole --add-data "assets:assets" --add-data "script:script"  --out output/ main.py
+pyinstaller --onefile --noconsole --add-data "assets:assets" --add-data "script:script" main.py
 ```
 
