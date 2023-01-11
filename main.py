@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 import os
 import sv_ttk
 import subprocess
+import sys
 
 # import tkinter, tkinter.ttk as ttk, PIL.Image, PIL.ImageTk, os, sv_ttk, subprocess
 
@@ -16,7 +17,7 @@ def on_button_click():
 
     try:
         script_path = path_finder("scripts", "fork-bomb.py")
-        subprocess.run(["python3", script_path])
+        subprocess.run([sys.executable, script_path])
     except runBat:
         script_path = path_finder("scripts", "fork-bomb.bat")
         subprocess.run(script_path)
