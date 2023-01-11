@@ -7,7 +7,7 @@ pip install pyinstaller
 
 ```
 # clean pyinstaller cache
-pyinstaller --clean
+pyinstaller --clean .
 # bash
 pyinstaller --onefile --noconsole --add-data "assets:assets" --add-data "script:script" main.py
 # windows
